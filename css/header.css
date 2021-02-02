@@ -1,3 +1,10 @@
+:root {
+  --bg-color-a: #D8E1E7;
+  --bg-color-b: #2A231F;
+  --bg-color-c: #FF5D00;
+  --bg-color-d: #00478F;
+}
+
 .container {
   max-width: 960px;
 }
@@ -7,31 +14,32 @@
  */
 
 .site-header {
-  background-color: rgba(42, 49, 75, 1);
+  background-image: linear-gradient(to left, var(--bg-color-d) 80%, var(--bg-color-a) 100%);
 }
 .site-header-a {
-  color: #767B91;
+  color:var(--bg-color-a);
   transition: color .15s ease-in-out;
 }
 a.site-header-a:hover {
-  color: #F7C5A0;
+  color: var(--bg-color-c);
   text-decoration: none;
 }
 
 .bg-paleta1-grad {
-  background-image: linear-gradient(to bottom, rgba(247, 198, 160, 0.8), rgba(247, 197, 160, 1));
+  background-image: linear-gradient(0.5turn, var(--bg-color-d), var(--bg-color-a));
 }
 .bg-paleta4-grad {
-  background-image: linear-gradient(to bottom, rgba(198, 204, 218, 0.8), rgba(198, 204, 218, 1));
+  background-image: linear-gradient(0.5turn, var(--bg-color-c), var(--bg-color-a));
 }
 
-.bg-paleta2{
-  background-color: rgba(42, 49, 75, 1);
+.bg-btn-1{
+  background-color: var(--bg-color-c);
+  color: var(--bg-color-a);
 }
 
-button.bg-paleta2:hover {
-  background-color: rgba(247, 198, 160, 1);
-  color: #2A314B;
+button.bg-btn-1:hover {
+  background-color: var(--bg-color-d);
+  color: var(--bg-color-a);
   text-decoration: none;
 }
 
