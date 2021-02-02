@@ -7,24 +7,43 @@
  */
 
 .site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(42, 49, 75, 1);
 }
-.site-header a {
-  color: #8e8e8e;
+.site-header-a {
+  color: #767B91;
   transition: color .15s ease-in-out;
 }
-.site-header a:hover {
-  color: #fff;
+a.site-header-a:hover {
+  color: #F7C5A0;
   text-decoration: none;
+}
+
+.bg-paleta1-grad {
+  background-image: linear-gradient(to bottom, rgba(247, 198, 160, 0.8), rgba(247, 197, 160, 1));
+}
+.bg-paleta4-grad {
+  background-image: linear-gradient(to bottom, rgba(198, 204, 218, 0.8), rgba(198, 204, 218, 1));
+}
+
+.bg-paleta2{
+  background-color: rgba(42, 49, 75, 1);
+}
+
+button.bg-paleta2:hover {
+  background-color: rgba(247, 198, 160, 1);
+  color: #2A314B;
+  text-decoration: none;
+}
+
+.my-card{
+  border-radius: 21px 21px 0 0;
 }
 
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
 
-.product-device {
+ .product-device {
   position: absolute;
   right: 10%;
   bottom: -30%;
